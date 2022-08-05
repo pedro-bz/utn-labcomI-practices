@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
+</head>
+<body>
+    <div>
+        <h1>Bienvenido a su Perfil de Usuario</h1>
+        <h3>Complete los campos con su información</h3>
+    </div>
+    <form action="succes.html" method="GET">
+        <fieldset>
+            <legend>Datos del Usuario</legend>
+            <ul>
+                <li>
+                    <label for="persona">Tipo de usuario: </label>
+                    <input
+                        type="text"
+                        id="persona"
+                        name="persona"
+                        value="ESTUDIANTE"
+                        readonly
+                    />
+                </li>
+                <br/>
+                <li>
+                    <label for="nombre">Nombre y Apellido: </label>
+                    <input 
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        required
+                    />
+                </li>
+                <br/>
+                <li>
+                    <label for="email">Email: </label>
+                    <input 
+                        type="text"
+                        id="email"
+                        name="email"
+                        maxlength="30"
+                        required
+                    />
+                </li>
+                <br/>
+                <li>
+                    <label for="edad">Edad: </label>
+                    <input 
+                        type="text"
+                        id="edad"
+                        name="edad"
+                        maxlength="2"
+                        required
+                    />
+                </li>
+                <br/>
+                <li>
+                    <label for="nac">Nacionalidad: </label>
+                    <select name="nac" id="nac">
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </li>
+                <br/>
+                <li>
+                    <label for="condicion">Condición Laboral: </label>
+                    <select name="condicion" id="condicion">
+                        <option value="Desempleado">Desempleado</option>
+                        <option value="En búsqueda laboral">En búsqueda laboral</option>
+                        <option value="Trabajo part time">Trabajo part time</option>
+                        <option value="Trabajo full time">Trabajo full time</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Gustos personales (opcional)</legend>
+            <ul>
+                <li>
+                    <label for="optional1">Gustos musicales: </label>
+                    <input 
+                        type="text"
+                        id="optional1"
+                        name="optional1"
+                        placeholder="separados por coma"
+                    />
+                </li>
+                <br/>
+                <li>
+                    <label for="optional2">Comidas preferidas: </label>
+                    <select name="optional2" id="optional2">
+                        <option value="Lo que venga">Lo que venga</option>
+                        <option value="Carnívoras">Carnívoras</option>
+                        <option value="Vegetarianas">Vegetarianas</option>
+                        <option value="Veganas">Veganas</option>
+                        <option value="Otras">Otras...</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+        <br>
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox">Recordar mis datos</label>
+        <br/>
+        <input type="submit" value="Submit" id="submit" name="submit">        
+    </form>
+</body>
+</html>

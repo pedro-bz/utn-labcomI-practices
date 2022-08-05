@@ -8,6 +8,36 @@
 </head>
 <body>
     <h1>Formulario inicio de sesión</h1>
-
+    <h4>Inicio de sesión</h4>
+    <p>Ingrese sus datos en la casilla correspondiente para poder ingresar</p>
+    <form action="profile.html" method="GET">
+        <ul>
+            <li>
+                <label for="nombre">Username: </label>
+                <input 
+                    type="text"
+                    id="username"
+                    name="username"
+                    maxlength="20"
+                    required
+                />
+            </li>
+            <br/>
+            <li>
+                <label for="password">Password: </label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                />
+            </li>
+        </ul>
+        <label for="checkbox">Recordar mis datos</label>
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <br/>
+        <br/>
+        <input type="submit" value="Submit" id="submit" name="submit">
+    </form>
 </body>
 </html>
