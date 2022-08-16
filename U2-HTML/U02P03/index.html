@@ -5,117 +5,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: #aaaaaa;
-        }
-
-        div.container {
-            overflow: auto;
-        }
-
-        header {
-            background-color: #e5e5e5;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav {
-            float: left;
-            width: 20%;
-            text-align: center;
-        }
-
-        nav ul {
-            padding-left: 0px;
-        }
-
-        nav li {
-            list-style: none;
-        }
-
-        nav li a {
-            background-color: #e5e5e5;
-            padding: 8px;
-            margin-top: 7px;
-            display: block;
-            width: 100%;
-            color: black;
-            font-weight: 700;
-        }
-
-        main {
-            float: left;
-            width: 60%;
-            padding: 0 20px;
-        }
-
-        .right {
-            background-color: #e5e5e5;
-            float: left;
-            width: 20%;
-            padding: 15px;
-            margin-top: 7px;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #e5e5e5;
-            text-align: center;
-            padding: 10px;
-            margin-top: 7px;
-        }
-
-        /* For mobile phones: */
-        @media only screen and (max-width: 620px) {
-
-            nav,
-            main,
-            .right {
-                width: 100%;
-            }
-        }
-    </style>
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <!-- Encabezado -->
     <header>
-        <h1>Hola mundo!</h1>
+        <h1>Inicio</h1>
     </header>
     <div class="container">
-        <!-- Navegación / cotenedor izquierdo -->
+        <!-- Navegación / contenedor izquierdo -->
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Multimedia</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
         <!-- Contenedor principal -->
         <main>
             <section>
-                <h2>Lorum Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut
-                    laoreet dolore magna aliquam erat volutpat.</p>
+                <div>
+                    <h2>Científicos argentinos buscan anticipar pandemias con 
+                        Inteligencia Artificial</h2>
+                    <p>
+                        Investigadores argentinos trabajan en el desarrollo de 
+                        herramientas tecnológicas basadas en Inteligencia 
+                        Artificial y Ciencia de Datos que permitan anticipar y 
+                        detectar potenciales brotes epidémicos a partir de un 
+                        elemento clave: los datos —anonimizados— de historias 
+                        clínicas electrónicas.
+                    </p>
+
+                    <h2>Qatar 2022: La inteligencia artificial, presente en 
+                        cada partido</h2>
+                    <p>
+                        Habrá 12 cámaras especializadas instaladas bajo el 
+                        techo de cada estadio. Ellas podrán seguir 29 puntos 
+                        corporales diferentes por jugador. Y esos datos se 
+                        tomarán 50 veces por segundo. Hay más: la pelota 
+                        tendrá un sensor que enviará datos 500 veces por 
+                        segundo a la sala de videos del partido. Así se hará 
+                        detectar con precisión el momento exacto del pase.
+                        Si hay una posición fuera de juego, aparecerá en la 
+                        sala de videos una bandera naranja indicando la 
+                        posibilidad de infracción. Entonces, el VAR 
+                        comprobará el momento en que se golpee la pelota y la
+                        línea de fuera de juego, con lo que avisará de la 
+                        situación a los árbitros en menos de 25 segundos.
+                    </p>
+
+                    <h2>El festejo es rojinegro: Newell’s le ganó el Clásico a 
+                        Central y se mantiene en lo más alto
+                        </h2>
+                    <p>
+                        La Lepra se impuso 1-0 en Cosecha gracias al cabezazo 
+                        de Delfina Maggioni a los 16 minutos de la etapa 
+                        inicial. Con este éxito, las dirigidas por Gastón 
+                        Aguirre siguen como punteras y mantienen los tres 
+                        puntos de ventaja con Social Lux, su único perseguidor.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h2>Tus peliculas favoritas en Netflix</h2>
+                    <p>A solo $999999 (+ impuestos pais)</p>
+                    <a href="https://www.netflix.com/" target="_blank">Netflix</a>
+                </div>
             </section>
         </main>
         <!-- Contenedor secundario / derecho -->
         <div class="right">
-            <h2>Info</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            <h2>Dato curioso</h2>
+            <p>El cerebro es capaz de retener 2.5 petabytes de información</p>
         </div>
     </div>
     <!-- Pie de Página-->
     <footer>
-        <p>© copyright labcomII.com1</p>
+        <p>© copyright 2022 anueldoblea.nash</p>
     </footer>
 </body>
 </html>

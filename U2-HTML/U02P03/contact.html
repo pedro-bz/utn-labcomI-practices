@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Información de contacto</h1>
+    </header>
+    <div class="container">
+        <!-- Navegación / contenedor izquierdo -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Contenedor principal -->
+        <main>
+            <section>
+                <h2>Contacto</h2>
+                <h5>Por favor, ingrese sus datos segun corresponda</h5>
+                <form>
+                    <fieldset>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><label for="name">Nombre</label></td>
+                                    <td>
+                                        <input type="text" id="name" name="name" maxlength="20" required />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="email">Email: </label></td>
+                                    <td>
+                                        <input type="text" id="email" name="email" maxlength="30" required />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="edad">Edad: </label></td>
+                                    <td>
+                                        <input type="text" id="edad" name="edad" maxlength="2" required />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="color">Color preferido: </label></td>
+                                    <td><input type="text" id="color" name="color" required /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="comentario">Comentario: </label></td>
+                                    <td><textarea cols="50" rows="10" id="comentario" name="comentario"
+                                            placeholder="Escriba un comentario..."></textarea></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td><input type="submit" value="Submit" id="submit" name="submit"></td>
+                                </tr>
+                                
+                            </tfoot>
+                        </table>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <!-- Contenedor secundario / derecho -->
+        <div class="right">
+            <h2>Tus datos</h2>
+            <p>Están completamente seguros acá... confiá en mí, soy un delfín 🐬 </p>
+        </div>
+    </div>
+    <!-- Pie de Página-->
+    <footer>
+        <p>© copyright 2022 anueldoblea.nash</p>
+    </footer>
+</body>
+
+</html>
