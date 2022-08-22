@@ -1,0 +1,83 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    width: 100%;
+    background-color: rgb(100, 2, 2);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    width: 70px;
+    height: auto;
+    max-width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+}
+
+.logo {
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    display: inline-block;
+    image-rendering: pixelated;
+    transition: 0.3s;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.nav-item:hover a {
+    background-color: #fff;
+    color: black;
+    opacity: 1;
+    font-size: larger;
+    border-radius: 30px;
+}
+
+.nav-item-login a {
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.nav-item-login a:hover {
+    font-size: 20px;
+}
