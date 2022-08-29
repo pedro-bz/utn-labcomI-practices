@@ -1,0 +1,206 @@
+html,
+body {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    background-color: rgb(216, 216, 216);
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li a {
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    align-items: baseline;
+}
+
+ul li {
+    display: inline-flex;
+    color: #fff;
+    opacity: 0.6;
+    transition: .5s;
+}
+
+li:hover {
+    background-color: #fff;
+    color: black;
+    opacity: 1;
+}
+
+li a:visited {
+    color: black;
+}
+
+header .profile {
+    transition: .5s;
+}
+
+.profile a svg {
+    display: inline-flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    width: 32px;
+    height: 46px;
+}
+
+.profile a:visited {
+    color: black;
+}
+
+.profile:hover {
+    background-color: #fff;
+    color: black;
+    opacity: 1;
+    transition: .5s;
+}
+
+.logo {
+    display: flex;
+    flex-grow: 1;
+    width: 110px;
+    margin-right: 20px;
+}
+
+
+/* main upper section */
+main section {
+    display: flex;
+    min-height: 300px;
+}
+
+section.main-image > div {
+    flex: 1;
+}
+
+section.dark {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.center-both {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-background {
+    background: url('https://www.utn.edu.ar/images/2018/09/27/3foferta.jpg');
+}
+
+.img-background h1 {
+    color: white;
+}
+
+.img-content p {
+    font-size: 18px;
+    padding: 45px;
+}
+
+/* middle section*/
+.careers-container {
+    width: 100%;
+    padding: 30px 0px;
+}
+
+.careers-container h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.careers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.careers .career {
+    flex: 1;
+    padding: 30px 0;
+    margin: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.careers .career:hover {
+    background-color: #6b6b6b;
+    transition: 0.3s;
+}
+
+/* content */
+.content-container {
+    display: flex;
+    padding: 10px 0;
+    margin: 20px;
+}
+
+.content-container p {
+    padding-top: 20px;
+}
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 46px;
+}
+
+footer > div.dark {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.bottom-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bottom-container div {
+    padding: 0px 20px 0px 20px;
+    margin: 0px 20px 0px 20px;
+}
+
+.bottom-container .info-left {
+    flex: 1;
+}
+
+.bottom-container .info-center {
+    flex: 1;
+    text-align:center;
+}
+
+.bottom-container .info-right {
+    flex: 1;
+    text-align: end;
+}
+
+.bottom-container .info-right > a {
+    text-decoration: none;
+    color: white;
+}
