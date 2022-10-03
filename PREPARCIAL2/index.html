@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Calculo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap" rel="stylesheet">
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span>Calculo de venta de pesos argentinos a divisa extranjera</span>
+    </header>
+    <main class="form-container">
+        <form>
+            <h1>Calculo de divisas</h1>
+            <div class="item-form">
+                <label>Pesos Argentinos:</label>
+                <label>$</label>
+                <input type="number" id="pesos" name="pesos">
+            </div>
+            <div class="item-form">
+                <select name="selector-divisas" id="selector-divisas">
+                    <option value="" disabled selected>Seleccionar divisa</option>
+                    <option value="USD">US Dollars</option>
+                    <option value="EURO">Euros</option>
+                    <option value="LIBRA">Libra Esterlina</option>
+                </select>
+                <label id="label-divisa">$</label>
+                <input type="text" id="resultado-divisa" name="resultado-divisa" readonly>
+            </div>
+            <div class="item-form item-form-buttons">
+                <button id="calculate-button" name="calcular">Calcular</button>
+                <button type="button" id="new-currency">Agregar Divisa</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Pedro Benzina</p>
+    </footer>
+</body>
+
+</html>

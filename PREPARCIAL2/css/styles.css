@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* top section */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #7B241C;
+    border-bottom-color: #FA8072;
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 2px;
+}
+
+header span {
+    color: white;
+}
+
+header span:hover {
+    cursor: default;
+}
+
+
+/* main section */
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(80deg, #7B241C 0%, #FA8072 100%);
+}
+
+h1:hover {
+    cursor: default;
+}
+
+.form-container {
+    margin: 20px;
+    padding: 50px;
+    background-color: white;
+    box-shadow: 5px 5px 10px 1px black;
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container .item-form {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.form-container .item-form.item-form-buttons {
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.form-container .item-form input {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.form-container .item-form input:focus {
+    border-color: #FA8072;
+    outline: none !important;
+}
+
+.form-container select {
+    cursor: pointer;
+    height: 30px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.form-container .item-form label {
+    flex-grow: 2;
+    padding: 0 3px 0 3px;
+}
+
+.form-container .item-form #label-divisa {
+    padding: 0 3px 0 6px;
+}
+
+button {
+    background-color: #FA8072;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 0 6px;
+}
+
+button:hover {
+    background-color: #7B241C;
+    cursor: pointer;
+}
+
+
+/* footer section */
+footer {
+    position: fixed;
+    bottom: 0px;
+    background: #7B241C;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: solid;
+    border-width: 0px;
+    border-top-width: 2.5px;
+    border-color: #FA8072;
+}
+
+footer p {
+    font-size: small;
+    color: white;
+}
+
+/* media section */
+@media (min-width: 400px) {
+    main {
+        padding: 10%;
+    }
+
+    footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form-container .item-form label {
+        display: block;
+    }
+}
